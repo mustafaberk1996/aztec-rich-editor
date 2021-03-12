@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" android:text="get text " android:id="@+id/btn_get_text"/>
+
+    <org.wordpress.aztec.AztecText
+        android:id="@+id/visual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:textColor="@color/black"
+        android:paddingBottom="60dp"
+        android:gravity="start"
+        android:imeOptions="flagNoExtractUi" />
+
+    <org.wordpress.aztec.source.SourceViewEditText
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:scrollbars="vertical"
+        android:imeOptions="flagNoExtractUi"
+        />
+
+    <org.wordpress.aztec.toolbar.AztecToolbar
+        android:id="@+id/formatting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

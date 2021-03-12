@@ -1,0 +1,2 @@
+include ':app', ':aztec', ':glide-loader'
+rootProject.name = "Aztec Rich Editor"
